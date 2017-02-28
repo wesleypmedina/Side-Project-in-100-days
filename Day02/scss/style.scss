@@ -1,0 +1,222 @@
+$header : #FF7101;
+$bg-slide : #27BEC5;
+$btn-slide : #FF6F00;
+$title-article:#1FBDC9;
+$btn-article:#27BEC5;
+$bg-footer : #FF7101;
+$header-ribbon : #ECECEC;
+
+/*===================HEADER====================*/
+.header-main{
+	width:100%;
+	height:8%;
+	padding: 0;
+	background: $header;
+}
+.img-of-Logo{
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+.ball-logo{
+	width: 50px;
+	background: transparent;
+	height: 50px;
+	top: 10px;
+	position: relative;
+	float: left;
+	border: 12px solid #fff;
+	border-radius: 100%;
+}
+h1{
+	color: #fff;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size: 24pt;
+	text-align: center;
+}
+.nav-nav{
+	background: $header;
+	margin: 10px;
+	border: 0 solid transparent;
+}
+.nav-nav ul{
+	float: left;
+	top: 7px;
+	position: relative;
+	margin: 11px 0;
+	list-style: none;
+}
+.nav-nav ul li{
+	float: left;
+	position: relative;
+	margin: 0 25px
+}
+.nav-nav ul li a{
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: block;
+
+}
+.img-social{
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	border-radius: 3px;
+	float: right;
+	position: relative;
+	top: 20px;
+	opacity: 0.8;
+	margin: 0 8px;
+	background: #fff;
+}
+.ribbon{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	max-width:100%;
+	height: 20px;
+	background:$header-ribbon;
+	box-shadow: 0 3px 3px -1px rgba(0,0,0,0.1);
+}
+
+/*===================== slideShow =====================*/
+.slide-bg{
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+.inside{
+	background:$bg-slide;
+	padding: 30px 80px;
+	margin: 30px 85px;
+
+}
+.slide-img{
+	height: 330px;
+	width: 400px;
+	left: 80px;
+	position: relative;
+}
+h2{
+	font-weight: 500;
+	color: #fff;
+	font-size: 40pt;
+	display: block;
+	text-shadow: 0 0 155px #fff;
+	margin-bottom: 30px;
+}
+p{
+	color: #fff;
+	margin: 0
+}
+.button{
+	color: #fff;
+	display: block;
+	font-size: 15pt;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.btn01{
+	width: 60px;
+	height: 60px;
+	position:absolute;
+	float: left;
+	left: 60px;
+	cursor: pointer;
+	top: 185px;
+	background: $bg-footer;
+	text-align: center;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.btn01 span{
+	color: #fff;
+	font-size: 33pt;
+	display: block;
+	height: 500px
+}
+.btn02{
+	width: 60px;
+	height: 60px;
+	position:absolute;
+	float: left;
+	left:1222px;
+	top: 185px;
+	cursor: pointer;
+	background: $bg-footer;
+	text-align: center;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.btn02 span{
+	color: #fff;
+	font-size: 33pt;
+	display: block;
+	height: 500px
+}
+
+/*===================== Section-low ===============*/
+.s-content{
+	width: 100%;
+	height: 60%;
+	background: $header-ribbon;
+}
+.s-img{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	top: 20px;
+	margin-bottom: 30px;
+}
+.s-article{
+	background: #fff;
+	height: 300px;
+	background-clip: content-box
+}
+.s-article p{
+	color: #000;
+}
+.s-inside{
+	margin: 30px auto;
+	text-align: center;
+}
+h3{
+	color: $bg-slide;
+	font-size: 20pt;
+	text-transform: uppercase;
+}
+.s-button{
+	background:$bg-footer;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	cursor: pointer;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 1px #000;
+}
+.s-button:nth-child(1){
+	left: 70px;
+	top: 290px;
+}
+.s-button:nth-child(2){
+	left: 70px;
+	top: 290px;
+}
+.s-button:nth-child(3){
+	left: 70px;
+	top: 290px;
+}
+.s-button:nth-child(4){
+	left: 70px;
+	top: 290px;
+}
+.s-button > span{
+	color: #fff;
+	font-size: 14pt;
+	font-weight: 700;
+	position: relative;
+	bottom: 12px;
+}

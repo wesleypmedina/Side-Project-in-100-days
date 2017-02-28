@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MiniGame</title>
+</head>
+<body>
+	<script>
+		//==========================criando canvas =============================================
+
+		const canvas = document.createElement('canvas');
+		const ctx = canvas.getContext('2d');
+
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+
+		document.body.appendChild(canvas);
+
+		//===============================bgImage==================================================
+
+		let bgReady = false;
+		bgImage = new Image();
+		bgImage.onload = function(){
+			bgReady = true;
+		}
+		bgImage.src = "";
+
+
+		//================================herobg==========================================
+
+		let heroReady = false;
+		const heroImage = new Image();
+		heroImage.onload = function(){
+			heroReady = true;
+		}
+		heroImage.src = "https://1001freedownloads.s3.amazonaws.com/icon/thumb//Greg-icon.png";
+
+		//===================================MostroBg===========================================
+		let mostroReady = false;
+		const mostroImage = new Image();
+		mostroImage.onload = function(){
+			mostroReady = true;
+		}
+		mostroImage.src = "http://icons.iconarchive.com/icons/piero-bello/heroes-and-villains/32/wolverine-1-icon.png";
+
+		//==================================hero=============================================
+		const hero = {
+			speed:255
+		};
+		//======================================mostro=======================================
+		const mostro = {};
+		let mostroAdd = 0;
+
+		//===================================== reset ======================================
+
+
+		const reset = function(){
+			hero.x = canvas.width / 2;
+			hero.y = canvas.height / 2;
+
+			mostro.x = Math.floor(Math.random()*(canvas.width - 64));
+			mostro.y = Math.floor(Math.random()*(canvas.height - 64));
+
+			ctx.fillStyle = 'red';
+			ctx.fillText('Continua..',50,50);
+			ctx.size = "30px";
+		}
+		
+		//====================================evento=======================================
+
+		const keyAdd = [];
+
+		window.addEventListener('keydown',function(e){
+			keyAdd[e.keyCode] = true;
+			update();
+		});
+
+		//=================================update=======================================
+		const update = function(modi){
+			if(37 == keyAdd){ hero.x -= hero.speed * modi;}
+			if(39 == keyAdd){ hero.x += hero.speed * modi;}
+			if(40 == keyAdd){ hero.y -= hero.speed * modi;}
+			if(38 == keyAdd){ hero.y += hero.speed * modi;} 
+		}
+
+		//=================================render======================================
+
+		const render = function(){
+			if(bgReady){ctx.drawImage(bgImage,0,0);}
+			if(heroReady){ctx.drawImage(heroImage,hero.x,hero.y);}
+			if(mostroReady){ctx.drawImage(mostroImage,mostro.x,mostro.y);}
+
+		}
+
+		//================================ loop===============================
+
+		const loop = function(){
+			const now = Date.now();
+			const delta = now - tt;
+			
+			render();
+			tt = now;
+			requestAnimationFrame(loop);
+		}
+
+		let tt = Date.now();
+		loop();
+		reset();
+
+		const w = window;
+		w.requestAnimationFrame(loop);
+	</script>
+</body>
+</html>
