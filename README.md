@@ -1,5 +1,5 @@
 # Side-Project-in-100-days
-Side-project
+Side-project.
 
 Desafio de criar 100 projetos nos quais serao: OnePage and Project wich javascript.
 
