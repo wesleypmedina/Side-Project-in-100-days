@@ -1,0 +1,204 @@
+$logo-name : #607D43;
+$bg-header:#1D1D1D;
+$bg-header2:#171717;
+$bg-nav:#7AA345;
+$bg-slide : #709B42;
+$bg-footer:#E8E8E8;
+$color-txt-slide:#E9EDDA;
+
+body,html{
+	padding: 0;
+	margin: 0;
+}
+/*================== header =====================*/
+.header-top{
+	width: 100%;
+	height: 130px;
+	background:linear-gradient(to bottom,$bg-header2 5%,rgba(0,0,0,0.9) 20%,$bg-header 80%);
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	box-shadow:0 4px 2px #000, 0 5px 2px #fff;
+}
+.logo-name{
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 50px;
+}
+.logo-name h2{
+	font-size: 29pt;
+	font-weight: 800;
+	color: $logo-name;
+	letter-spacing: 1px;
+	text-shadow:0 0 4px #000,0 -1px 1px #fff;
+}
+nav{
+	float: right;
+	position: relative;
+	right: 30px
+}
+nav ul{
+	float: left;
+	list-style: none;
+	margin: 30px 0;
+}
+nav ul li{
+	float: left;
+	margin: 10px 0;
+}
+nav ul li a{
+	color:rgba(250,250,250,0.9);
+	font-weight:900;
+	font-size: 22pt;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+
+	&:hover{
+		background:linear-gradient(to top,darkgreen 10%,$bg-nav 80%);
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: inset 1px -1px 2px #fff,0 0 5px #000;
+	}
+}
+
+/* ====================== slide ===============================*/
+
+.slide-main{
+	position:relative;
+	top:0;
+	margin: 0;
+	left: 0;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+	height: 380px;
+}
+.slide-main .slide{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	filter: blur(7px);
+}
+.slide-main .slide h1{
+	margin: 0
+}
+.slide-main .slider-1{
+	background: #000 url('http://www.osmais.com/wallpapers/201204/folhas-verdes-wallpaper-1900x1200.jpg') no-repeat center center / cover;
+}
+.slide-main .slider-2{
+	background: #000 url('http://condominioelisa.com/wp-content/uploads/2015/12/Papel-de-Parede-Folhas-Verdes-2560x1440.jpg') no-repeat center center / cover;
+}
+.slide-main .slider-3{
+	background: #000 url('http://image37.360doc.com/DownloadImg/2011/09/2119/17818838_1.jpg') no-repeat center center / cover;
+}
+.btn1{
+	position: absolute;
+	background:#fff;
+	padding: 10px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: block;
+	top: 150px;
+	box-shadow: 1px 1px 6px -1px black;
+	left: 20px;
+	border-radius: 100%;
+}
+.btn2{
+	position: absolute;
+	background:#fff;
+	padding: 10px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: block;
+	top: 150px;
+	box-shadow: 1px 1px 6px -1px black;
+	left: 1290px;
+	border-radius: 100%;
+}
+.btn1 span,
+.btn2 span{
+	font-weight: 900;
+	font-size: 20pt;
+	text-align: center;
+
+}
+h1{
+	position: absolute;
+	top: 40px;
+	left: 120px;
+	margin: 0;
+	padding: 20px;
+	text-shadow: 2px 2px 6px #000;
+	font-weight: 900;
+	font-size: 33pt;
+	color:$color-txt-slide;
+	filter: blur(0px);
+}
+h1 span{
+	color: #000;
+}
+
+/*================ footer ======================*/
+.footer{
+	width: 100%;
+	height: 350px;
+	position: relative;
+	border-top: 3px solid rgba(0,0,0,0.7);
+	background: $bg-footer;
+	margin: 0;
+	padding: 0
+}
+.footer .s-footer{
+	display: inline-block;
+	width: 300px;
+	height: 70%;
+	left: 10px;
+	position: relative;
+	text-align: center;
+	padding: 0 10px;
+	margin: 40px auto;
+	border-right: 3px solid rgba(0,0,0,0.1);
+}
+.s-footer .bd{
+	border: 1px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.footer .s-footer img{
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: relative;
+	top: 10px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.footer .s-footer h3{
+	font-size: 20pt;
+	color: $logo-name;
+	font-weight: 400
+}
+
+.footer .s-footer button{
+	width: 120px;
+	height: 33px;
+	margin-top: 20px;
+	background: linear-gradient(to top,darkgreen 10%,$bg-nav 80%);
+		border: 1px solid black;
+		border-radius: 2px;
+		box-shadow: inset 1px -1px 2px #fff,1px 1px 5px #000;
+		padding: 2px;
+}
+.footer .s-footer button span{
+	color: #fff;
+	font-size: 11pt;
+	text-transform: uppercase
+}

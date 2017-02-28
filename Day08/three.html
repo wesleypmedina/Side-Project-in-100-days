@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+</head>
+<style>
+	body,html{padding: 0;margin: 0}
+</style>
+<body>
+	<script>
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.5, 1000 );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+var geometry = new THREE.SphereGeometry( 10, 110, 110 );
+var material = new THREE.MeshNormalMaterial ( {wireframe: true} );
+var sphere = new THREE.Mesh( geometry, material );
+scene.add( sphere );
+ 
+camera.position.z = 45;
+
+function render(){
+	requestAnimationFrame( render );
+	sphere.rotation.x -= 115;
+	sphere.rotation.y -= 115;
+	renderer.render( scene, camera );
+}
+render();
+
+window.addEventListener('resize', function() {
+	var WIDTH = window.innerWidth,
+	HEIGHT = window.innerHeight;
+	renderer.setSize(WIDTH, HEIGHT);
+	camera.aspect = WIDTH / HEIGHT;
+	camera.updateProjectionMatrix();
+});
+	</script>
+
+	
+</body>
+</html>
