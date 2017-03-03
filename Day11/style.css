@@ -1,0 +1,12 @@
+.cone {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  background: orange;
+  transform: rotate(225deg);
+  border-radius: 20px;
+  box-shadow: -5px 0 1px 0 #C36B19, 0 -5px 1px 0 #C36B19; }
+
+/*# sourceMappingURL=style.css.map */

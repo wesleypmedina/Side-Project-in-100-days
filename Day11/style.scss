@@ -1,0 +1,15 @@
+
+
+$sombra : #C36B19;
+$bg-cone : orange;
+.cone{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
+	background: $bg-cone;
+	transform: rotate(225deg);
+	border-radius: 20px;
+	box-shadow: -5px 0 1px 0 $sombra,0 -5px 1px 0 $sombra;
+}
