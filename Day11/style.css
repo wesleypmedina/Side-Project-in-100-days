@@ -8,5 +8,25 @@
   transform: rotate(225deg);
   border-radius: 20px;
   box-shadow: -5px 0 1px 0 #C36B19, 0 -5px 1px 0 #C36B19; }
+  .cone::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 70px;
+    top: 70px;
+    transform: rotate(45deg);
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 200px solid #FDBA0A; }
+  .cone::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 26px;
+    border-radius: 100% 20px 100% 20px;
+    background: #FDBA0A;
+    width: 149px;
+    height: 149px; }
 
 /*# sourceMappingURL=style.css.map */
