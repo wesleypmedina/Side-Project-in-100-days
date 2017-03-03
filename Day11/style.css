@@ -7,7 +7,7 @@
   background: orange;
   transform: rotate(225deg);
   border-radius: 20px;
-  box-shadow: -5px 0 1px 0 #C36B19, 0 -5px 1px 0 #C36B19; }
+  box-shadow: -6px 0 3px 0 #C36B19, 0 -6px 3px 0 #C36B19; }
   .cone::before {
     content: "";
     position: absolute;

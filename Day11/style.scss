@@ -12,7 +12,7 @@ $bg-topo : #FDBA0A;
 	background: $bg-cone;
 	transform: rotate(225deg);
 	border-radius: 20px;
-	box-shadow: -5px 0 1px 0 $sombra,0 -5px 1px 0 $sombra;
+	box-shadow: -6px 0 3px 0 $sombra,0 -6px 3px 0 $sombra;
 
 	&::before{
   content: "";
