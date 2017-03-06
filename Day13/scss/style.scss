@@ -1,0 +1,135 @@
+html,
+body{
+	padding:0;
+	margin:0;
+}
+
+.body{
+	position:absolute;
+	left:calc(50% - 150px);
+	top:calc(50% - 150px);
+	width:300px;
+	height:300px;
+	border-radius:100%;
+	background: #3982C3;
+	box-shadow:inset -37px -37px 48px #44447A;
+
+		&::after{
+			position:relative;
+			content:"";
+			width:120px;
+			height:0;
+			top:220px;
+			left:20%;
+			border-left:182px solid transparent;
+			border-right:102px solid transparent;
+			border-bottom:15px solid rgba(0,0,0,0.3);
+		}
+	.head{
+		width:170px;
+		position:relative;
+		top:100px;
+		margin:0;
+		.eye:first-child{
+			float:left;
+			position:relative;
+			top:35%;
+			left:30px;
+			width:30px;
+			height:60px;
+			background:#000;
+			border-radius: 30% 30% 30% 30%;
+			margin-right:0;
+			z-index:1;
+					.silio{
+						position:absolute;
+						top:-20px;
+						left:2px;
+						transform:rotate(70deg);
+						width:22px;
+						height:48px;
+						background:rgba(0,0,0,0.3);
+						border-radius:30%;
+					}
+		}
+				.palp{
+					position:relative;
+					top:0;
+					left:0;
+					width:100%;
+					animation:animar 10s linear infinite;
+					border-radius:30%;
+					background:rgba(0,0,0,0.3);
+					z-index:9999;
+				}
+
+		.eye:last-child{
+			float:right;
+			top:35%;
+			left:60px;
+			width:30px;
+			height:60px;
+			background:#000;
+			border-radius: 30% 30% 30% 30%;
+			z-index:10;
+					.silio{
+						position:absolute;
+						top:-20px;
+						left:145px;
+						transform:rotate(-70deg);
+						width:22px;
+						height:48px;
+						background:rgba(0,0,0,0.3);
+						border-radius:30%;
+					}
+		}
+	}
+	.mouth{
+	position:absolute;
+	top:200px;
+	left:50px;
+	background:#000;
+	width:80px;
+	height:4.3px;
+	border-radius:30%;
+	transform:rotate(11deg);
+
+}
+}
+
+@keyframes animar{
+	0%{
+		height: 0%;
+	}
+		10%{
+		height: 30%;
+	}
+		20%{
+		height: 60%;
+	}
+		30%{
+		height: 80%;
+	}
+		40%{
+		height: 90%;
+	}
+		50%{
+		height: 100%;
+	}
+		55%{
+		height: 90%;
+	}
+		60%{
+		height: 70%;
+	}
+		70%{
+		height: 50%;
+	}	80%{
+		height: 30%;
+	}	90%{
+		height: 10%;
+	}	100%{
+		height:0%;
+	}
+	
+}
