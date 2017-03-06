@@ -56,10 +56,11 @@ body{
 					position:relative;
 					top:0;
 					left:0;
+					border-bottom:3px solid rgba(0,0,0,0.3);
 					width:100%;
 					animation:animar 10s linear infinite;
 					border-radius:30%;
-					background:rgba(0,0,0,0.3);
+					background:#3982C3;
 					z-index:9999;
 				}
 
@@ -105,22 +106,22 @@ body{
 		height: 30%;
 	}
 		20%{
-		height: 60%;
+		height: 50%;
 	}
 		30%{
-		height: 80%;
+		height: 60%;
 	}
 		40%{
-		height: 90%;
+		height: 80%;
 	}
 		50%{
-		height: 100%;
+		height: 85%;
 	}
 		55%{
-		height: 90%;
+		height: 70%;
 	}
 		60%{
-		height: 70%;
+		height: 60%;
 	}
 		70%{
 		height: 50%;
