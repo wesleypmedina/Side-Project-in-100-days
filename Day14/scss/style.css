@@ -1,7 +1,9 @@
-
+.body {
+  position: absolute;
+  left: calc(50% - 300px);
+  top: calc(50% - 200px);
+  width: 600px;
+  height: 400px;
+  border: 1px solid #000; }
 
 /*# sourceMappingURL=style.css.map */
-body,
-html{
-  background: #000
-}
