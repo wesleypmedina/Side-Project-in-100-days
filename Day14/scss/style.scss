@@ -6,5 +6,15 @@
   top:calc(50% - 200px);
   width: 600px;
   height: 400px;
-  border:1px solid #000
+  border:1px solid #000;
+  border-left: 1px solid transparent
+}
+.pescoso{
+  width: 70px;
+  height: 400px;
+  position: relative;
+  left: 0;
+  top:0;
+  border-radius: 50%;
+  border-left: 5px solid #000;
 }
