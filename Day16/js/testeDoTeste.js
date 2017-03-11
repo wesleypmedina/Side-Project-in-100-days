@@ -1,4 +1,5 @@
-	var txt = window.prompt('digite algo');
+	var txt = confirmar();
+	console.log(txt);
 	var armazenador = 0;
 	let array = [];
 	for (var i = 0 in txt) {
