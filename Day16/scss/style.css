@@ -109,5 +109,19 @@ body {
     left: 70%; }
     .main .reset:active {
       box-shadow: 0 0 0 #000; }
+  .main ul {
+    position: absolute;
+    float: left;
+    top: 60%;
+    opacity: 1;
+    left: 25%;
+    text-decoration: none; }
+    .main ul li {
+      font-size: 30pt;
+      list-style: none;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 0 #000;
+      float: left;
+      margin: 0 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -122,4 +122,19 @@ $text-h1 : #9C1616;
 					box-shadow: 0 0 0 #000;
 				}
 		}
+		ul{
+			position:absolute;
+			float : left;
+			top: 60%;
+			opacity:1;
+			left:25%;
+			text-decoration:none;
+				 li{
+			 	font-size: 30pt;
+			 	list-style: none;
+			 	@include sombra-txt(#fff);
+			 	float : left;
+			 	margin: 0 20px;
+			 }
+		}
 }

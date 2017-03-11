@@ -1,5 +1,4 @@
-	var txt = confirmar();
-	console.log(txt);
+	function resultado(txt){
 	var armazenador = 0;
 	let array = [];
 	for (var i = 0 in txt) {
@@ -41,4 +40,15 @@
 
 	}
 	const ver = array.join("").toString();
-	console.log(ver);
+		listagem(ver,txt);
+	}
+
+	function listagem(valor,txt){
+		const lista = document.querySelector('.lista');
+		const nome = document.createElement('li');
+		nome.textContent = txt;
+		const numero = document.createElement('li');
+		numero.textContent = valor;
+		lista.appendChild(nome);
+		lista.appendChild(numero);
+	}
