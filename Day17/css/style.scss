@@ -1,0 +1,16 @@
+@import "reset.scss";
+$fundo : grey;
+input{
+  position: absolute;
+  margin: 0;
+  width: 30%;
+  height: 20%;
+  left : 35%;
+  top:65%;
+}
+
+canvas{
+  background: rgba($fundo,0.8);
+  box-shadow: 0 3px 5px -1px #000,inset 0 0 5px #000;
+  border:5px solid #fff;
+}
