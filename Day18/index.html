@@ -20,4 +20,14 @@
   pincel.beginPath();
   pincel.arc(300,200,70,0, 2 * Math.PI);
   pincel.fill()
+
+  function criarBandeiraAlemanha(){
+    pincel.fillStyle = '#000';
+    pincel.fillRect(0,0,600,133);
+    pincel.fillStyle = 'yellow';
+    pincel.fillRect(0,133,600,133);
+    pincel.fillStyle = "red";
+    pincel.fillRect(0,266,600,133);
+  }
+  setInterval(criarBandeiraAlemanha,1000);
 </script>
