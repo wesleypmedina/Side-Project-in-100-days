@@ -1,6 +1,23 @@
-<canvas width="600" height="450"></canvas>
+<canvas width="600" height="400"></canvas>
 
 <script>
   const tela = document.querySelector('canvas');
   const pincel = tela.getContext('2d');
+
+  pincel.fillStyle = 'green';
+  pincel.fillRect(0,0,600,400);
+  pincel.fillStyle = 'yellow';
+  pincel.beginPath();
+  pincel.moveTo(300,0);
+  pincel.lineTo(0,200);
+  pincel.lineTo(600,200);
+  pincel.fill();
+  pincel.moveTo(300,400);
+  pincel.lineTo(0,200);
+  pincel.lineTo(600,200);
+  pincel.fill();
+  pincel.fillStyle = 'blue';
+  pincel.beginPath();
+  pincel.arc(300,200,70,0, 2 * Math.PI);
+  pincel.fill()
 </script>
