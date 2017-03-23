@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Assistir Filmes Online</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <style>
+    #bloco{
+        position: absolute;
+    }
+    </style>
+
+</head>
+<body>
+<header id="corpo-full">
+<header id="cabecalho">
+    <img src="http://vignette3.wikia.nocookie.net/dragonball/images/c/c7/268px-GT_Ascended_Goku.png/revision/latest?cb=20130903155854" id="bloco">
+    <div id="capa">
+        <img src="imagens/textura/red.jpg">
+    </div>
+    <div id="logo">
+        <a href="main.html">
+        <img src="imagens/icones/filmes2.png">
+        </a>
+    </div>
+    <div id="menu">
+        <h3>Categorias:</h3>
+        <ul>
+            <li>ação</li>
+            <li>animação</li>
+            <li>comedia</li>
+            <li>corrida</li>
+            <li>documentario</li>
+            <li>drama</li>
+            <li>ficção cientifica</li>
+            <li>guerra</li>
+            <li>musical</li>
+            <li>policial</li>
+            <li>romance</li>
+            <li>suspense</li>
+            <li>terror</li>
+
+        </ul>
+    </div>
+</header>
+<section id="corpo">
+    <div id="principal">
+        <h1>Lan<span>çame</span>ntos</h1>
+                <ul id="album">
+                    <li id="filme1">
+                        <article>
+                            <div id="capa">
+                                <a href="filmes/ateqadorte2.html"><img src="imagens/icones/play_button-512.png"></a>
+                                    <div id="barra">
+                                        <span>ate que a sorte nos separe 2</span>
+                                    </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="filme2">
+                        <article>
+                            <div id="capa">
+                                <a href="filmes/ataque-zumbi.html"><img src="imagens/icones/play_button-512.png"></a>
+                                <span>Filme1</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="filme3">
+                        <article>
+                            <div id="capa">
+                                <a href="filmes/insurgente.html"><img src="imagens/icones/play_button-512.png"></a>
+                                <span>Filme1</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="filme4">
+                        <article>
+                            <div id="capa">
+                                <a href="filmes/jogos-vorazes-a-esperansa.html"><img src="imagens/icones/play_button-512.png"></a>
+                                <span>Filme1</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="filme5">
+                        <article>
+                            <div id="capa">
+                                <a href="filmes/ted-2.html"><img src="imagens/icones/play_button-512.png"></a>
+                                <span>Filme1</span>
+                            </div>
+                        </article>
+                    </li>
+
+                </ul>
+        <a href="#"><h3>mais<span>filmes</span></h3></a>
+        <section id="series">
+            <div id="principal-series">
+                <h1>se<span>ri</span>es</h1>
+                <ul id="album">
+                    <li id="serie1">
+                        <article>
+                            <div id="capa">
+                                <img src="imagens/icones/play_button-512.png">
+                                <div id="barra">
+                                    <span>Sobrenatural</span>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="serie2">
+                        <article>
+                            <div id="capa">
+                                <img src="imagens/icones/play_button-512.png">
+                                <span>Sobrenatural</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="serie3">
+                        <article>
+                            <div id="capa">
+                                <img src="imagens/icones/play_button-512.png">
+                                <span>Sobrenatural</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="serie4">
+                        <article>
+                            <div id="capa">
+                                <img src="imagens/icones/play_button-512.png">
+                                <span>Sobrenatural</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li id="serie5">
+                        <article>
+                            <div id="capa">
+                                <img src="imagens/icones/play_button-512.png">
+                                <span>Sobrenatural</span>
+                            </div>
+                        </article>
+                    </li>
+
+                </ul>
+                <a href="#"><h3 id="texto2">mais<span>series</span></h3></a>
+    </div>
+</section>
+<aside></aside>
+</header>
+<footer>
+    <div id="rodape-img">
+        <img src="imagens/icones/filmes2.png">
+        </div>
+    <h3>popcorn filme online</h3>
+</footer>
+
+
+
+    <script>
+
+    var px =0;
+    var py = 0;
+    
+    function load(){
+        document.addEventListener("keydown",tecla);
+        tecla();
+    }
+
+    function tecla(){
+        var jg = document.getElementById("bloco");
+        var tecla = event.keyCode;
+        if(tecla == 37){
+            px-=10;
+            jg.style.left=px+"px";
+        }
+        else if(tecla == 39){
+            px+=10;
+            jg.style.left=px+"px";
+        }
+        else if(tecla == 38){
+            py-=10;
+            jg.style.top=py+"px";
+        }
+        else if(tecla == 40){
+            py+=10;
+            jg.style.top=py+"px";
+        }
+    }
+
+    load();
+    </script>
+
+</body>
+</html>

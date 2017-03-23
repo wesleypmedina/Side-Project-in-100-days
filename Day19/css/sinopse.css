@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+section#corpo-full {
+    height: 900px;
+    width: 80%;
+    margin-left: 1%;
+}
+section#corpo-full div#capa-filme {
+    width: 16%;
+    height: 31%;
+    top: 10%;
+    position: relative;
+    left: 1%;
+
+}
+section#corpo-full div#capa-filme img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    box-shadow: 2px 2px 2px black;
+}
+section#corpo-full div#sinopse {
+    width: 75%;
+    overflow: hidden;
+    top: -23%;
+    left: 23%;
+    position: relative;
+
+}
+section#corpo-full div#sinopse h1{
+    background-color:darkred;
+    color: white;
+    text-shadow: 4px 1px 2px black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+section#corpo-full div#sinopse h3{
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 3px 3px 2px rgba(0,0,0,.5);
+}
+section#corpo-full article#conteudo {
+    background-color: #b3d4fc;
+    height: 500px;
+    width: 75%;
+    position: relative;
+    display: block;
+    top: -23%;
+    left: 23%;
+}

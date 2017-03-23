@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+body{
+    width: 99.7%;
+    background-color: white;
+    margin-top: -10px;
+    margin-left: -0.2px;
+
+}
+footer{
+    clear: both;
+    border-top:1px solid black ;
+    text-align: center;
+    background-color: darkred;
+}
+footer div#rodape-img {
+     width: 50px;
+     height: 50px;
+    margin-left: 50%;
+}
+footer div#rodape-img img{
+    width: 100%;
+    height:100%;
+}
+footer h3 {
+     margin: -5px;
+    color: white;
+}
+header#corpo-full {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0px;
+}
+header#cabecalho {
+    height: 190px;
+    border: 1px solid black;
+}
+header#cabecalho div#capa {
+    margin-top: -10px;
+    height: 200px;
+    nav-down: auto;
+}
+header#cabecalho div#capa img{
+    width: 100%;
+    height: 100%;
+}
+header#cabecalho div#logo img{
+    width: auto;
+    left: 42%;
+    right: 50%;
+    top: -06px;
+    position: absolute;
+}
+header#cabecalho div#menu {
+    overflow: hidden;
+    margin-left: 82%;
+}
+header#cabecalho div#menu h3{
+    background-color: darkred;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+    margin-bottom:-20.9px;
+    display: block;
+    margin-top: 50px;
+    width: 74%;
+    margin-left: 9%;
+    text-align: center;
+    padding: 5px;
+}
+header#cabecalho div#menu ul {
+    padding: 20px;
+    width: 80%;
+    margin-top:0px;
+}
+header#cabecalho div#menu li{
+    display: block;
+    font-family: 'Bangers', cursive;
+    border: 1px solid rgba(488,0,0,.3);
+    margin: 2px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 13pt;
+    box-shadow: 3px 1px 1px rgba(0,0,0,.5);
+}
+header#cabecalho div#menu li:hover {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 2px 2px black;
+    box-shadow: 2px 2px 2px hsl(171.53%.42%),0px 10px 1px #000,0px 0px 3px #136c60 inset;
+}
+
+section#corpo {
+    width: 83%;
+    margin-left: -2px;
+    margin-top: 40px;
+}
+
+section#corpo div#principal h1{
+    font-family: 'Bangers', cursive;
+     font-size: 20pt;
+    text-shadow: 1px 0px 2px #606060;
+    margin-bottom: 0px;
+    height:26px;
+    width: 40%;
+    margin-left: 10px;
+}
+section#corpo div#principal h1 span{
+    top: 0px;
+    margin: 0px;
+    color: darkred;
+    background-color: transparent;
+}
+section#corpo div#principal ul{
+    overflow: hidden;
+    width: 96%;
+    margin-top: 0px;
+   padding: 11px;
+    border: groove 1px rgba(0,0,0,.2);
+}
+section#corpo div#principal li{
+    display: inline-block;
+    margin: 1px;
+    border: 1px solid white;
+    width: 190px;
+    height: 300px;
+    -webkit-transition: all 0.3s;
+}
+section#corpo div#principal h3{
+    background-color: #888888;
+    color: white;
+    left: 74%;
+    margin-top: -3%;
+    position: absolute;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal h3#texto2{
+    left: 90%;
+    top: 0px;
+    position: relative;
+    width:9%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal h3 span{
+    position: relative;
+    top: 0px;
+    color: darkred;
+    background-color: transparent;
+}
+
+section#corpo div#principal li.icone{
+    border: 1px dashed red;
+    position: relative;
+    background-color: #888888;
+    background-position:50% 50% ;
+
+    opacity: 1;
+}
+section#corpo div#principal span{
+    background-color: #888888;
+    width:100%;
+    top: -22px;
+    padding:3px;
+    position: relative;
+}
+section#corpo div#principal div#capa div#barra{
+    height: 5px;
+    position: relative;
+    top: -13px;
+    background-color: green;
+}
+section#corpo div#principal div#capa div#barra div#imagen img{
+    height: 5px;
+    position: relative;
+    top: -13px;
+}
+section#corpo div#principal li article div#capa img {
+    width: 190px;
+    height: 300px;
+    opacity: 0;
+}
+section#corpo div#principal li article div#capa:hover img {
+    opacity: 1;
+    background-color: rgba(0,0,0,.4);
+}
+
+
+/*________________________________________________________________________________________________*/
+section#corpo div#principal li#filme1 {
+    background: url("../imagens/filmes/atequeasortenossepare2_1.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal li#filme1:hover{
+    -webkit-transform: scale(1.1);
+}
+section#corpo div#principal li#filme2 {
+    background: url("../imagens/filmes/atakezumbi.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal li#filme2:hover{
+    -webkit-transform: scale(1.1);
+}
+section#corpo div#principal li#filme3 {
+    background: url("../imagens/filmes/insurgent.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal li#filme3:hover{
+    -webkit-transform: scale(1.1);
+}
+section#corpo div#principal li#filme4{
+    background: url("../imagens/filmes/jogosvorazes.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal li#filme4:hover{
+    -webkit-transform: scale(1.1);
+}
+section#corpo div#principal li#filme5{
+    background: url("../imagens/filmes/ted2-poster2705.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}
+section#corpo div#principal li#filme5:hover{
+    -webkit-transform: scale(1.1);
+}
+/*-------------------------------------------------------------------------------*/
+section#corpo div#principal-series li{
+    background: url("../sobrenatural-logo-4c2aa-temporada.jpg");
+    background-position:50% 50% ;
+    background-size:200px 300px ;
+    box-shadow: 5px 2px 2px rgba(0,0,0,.4);
+}section#corpo div#principal-series li:hover{
+    -webkit-transform: scale(1.1);
+ }
+
